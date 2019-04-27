@@ -1,27 +1,30 @@
 
-Eu fiz o seguinte para instalar (Embora eu pudesse copiar todo o ~/.vimdiretório para o novo local em vez dos passos 3-6):
+Eu fiz o seguinte para instalar (Embora eu pudesse copiar todo o ~/.vimdiretÃ³rio para o novo local em vez dos passos 3-6):
 
 1 - Install vim 7.4:
 > brew install vim
 
-	Nota: Se você estiver usando o sistema operacional mac, certifique-se de criar um alias em seu bash_profile apontando para macvim Ex: 
+	Nota: Se vocÃª estiver usando o sistema operacional mac, certifique-se de criar um alias em seu bash_profile apontando para macvim Ex: 
 		> which mvim
 
 2 - Instalar o Vundle
 
 3 - Adicionar Plugin 'Valloric/YouCompleteMe'para ~/.vimrc e executar :PluginInstall no vim.
 
-4 - Baixar clang + llvm- version -x86_64-apple-darwin.tar.xz da Pre-Built Binariesseção de LLVM Download Page manualmente (agora é a última versão).
+4 - Baixar clang + llvm- version -x86_64-apple-darwin.tar.xz da Pre-Built BinariesseÃ§Ã£o de LLVM Download Page manualmente (agora Ã© a Ãºltima versÃ£o).
 (http://llvm.org/releases/download.html)
 
 
-5 - Faça o diretório de download:
+5 - FaÃ§a o diretÃ³rio de download:
 > mkdir -p ~/.vim/bundle/YouCompleteMe/third_party/ycmd/clang_archives
 
-6 - Coloque o arquivo baixado nesse diretório.
+6 - Coloque o arquivo baixado nesse diretÃ³rio.
 > mv  clang+llvm-*-x86_64-apple-darwin.tar.xz ~/.vim/bundle/YouCompleteMe/third_party/ycmd/clang_archives
 
 7 - Compile YouCompleteMe:
 
 > cd ~/.vim/bundle/YouCompleteMe
 > ./install.py --clang-completer
+
+8 - Instalando ctags
+> brew install ctags-exuberant
